@@ -18,11 +18,11 @@ const doctorSchema = new mongoose.Schema({
         require: true
     },
     startYear: {
-        type: number,
+        type: Number,
         require: true
     },
     endYear: {
-        type: number
+        type: Number
     },
 })
 
