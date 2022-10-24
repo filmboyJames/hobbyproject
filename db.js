@@ -9,8 +9,9 @@ const doctorSchema = new mongoose.Schema({
         type: String,
         require: true
     },
+    
     companions: {
-        type: String,
+        type: Array,
         require: true
     },
     name: {

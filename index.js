@@ -17,6 +17,8 @@ app.get("/", (req, res) => {
     res.send("For all those who love Doctor Who!");
 })
 
+app.use('/doctors', logger, doctorRoutes);
+
 app.use((err,req,res,next) => {
     console.log(err);
     res.status(err.status || 500).send(err.message || "Something went wrong");;

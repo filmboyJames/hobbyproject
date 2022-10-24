@@ -1,0 +1,17 @@
+[
+    {
+    "number": "1st",
+    "companions": "Susan",
+    "name": "William Hartnell",
+    "startYear": 1963,
+    "endYear": 1966
+},
+{
+    "number": "2nd",
+    "companions": "Jamie",
+    "name": "Patrick Troughton",
+    "startYear": 1966,
+    "endYear": 1969
+
+}
+]
