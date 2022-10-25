@@ -18,8 +18,7 @@ router.patch("/updateDoctorElementById/:oldDoctorId", async (req, res, next) => 
     if(0) return next({status:400, message: "Doctor does not exist to update"});
     try{
         const result = await doctorModel.findByIdAndUpdate(req.params.oldDoctorId, req.body, {upsert: true})
-        const newDoctor = await doctorModel.findById(req.params.query);
-        res.send(newDoctor);
+        res.send(result);
     } catch(err) {
         return next(err);
     }
