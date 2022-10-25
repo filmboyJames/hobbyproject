@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const cors = require("cors")
 
 const app = express();
 
@@ -7,8 +8,9 @@ const doctorRoutes = require('./routes/doctors.js');
 
 app.use(express.json());
 app.use(bodyParser.json());
+app.use(cors());
 
-const logger = (req, res, next) => {
+function logger(req, res, next) {
     console.log("Request received at ", new Date());
     return next();
 }
