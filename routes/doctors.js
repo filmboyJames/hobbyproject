@@ -14,7 +14,7 @@ router.get("/getAll", (req, res) => doctorModel.find({}).then(results => res.sen
 
 router.get("/getDoctorByName/:id", (req, res, next) => doctorModel.find({ 'name': req.params.id }).then(results => res.send(results)).catch(err => next(err)));
 
-router.patch("/updateDoctorElementById/:oldDoctorId", async (req, res, next) => {
+router.patch("/updateDoctorById/:oldDoctorId", async (req, res, next) => {
     if(0) return next({status:400, message: "Doctor does not exist to update"});
     try{
         const result = await doctorModel.findByIdAndUpdate(req.params.oldDoctorId, req.body, {upsert: true})
