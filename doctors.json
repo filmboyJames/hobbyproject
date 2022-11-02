@@ -13,5 +13,21 @@
     "startYear": 1966,
     "endYear": 1969
 
+},
+{
+    "number": "3rd",
+    "companions": "Jo",
+    "name": "Jon Pertwee",
+    "startYear": 1970,
+    "endYear": 1974
+
+},
+{
+    "number": "4th",
+    "companions": "Sarah-Jane",
+    "name": "Tom Baker",
+    "startYear": 1974,
+    "endYear": 1981
+
 }
 ]
